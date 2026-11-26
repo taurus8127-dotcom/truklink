@@ -1,46 +1,76 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TrukLink — Приложение и Политика конфиденциальности</title>
-  <style>
-    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; line-height: 1.6; color: #102a43; background: #f4f9ff; margin: 0; padding: 20px; }
-    .container { max-width: 780px; margin: 0 auto; background: #ffffff; padding: 32px; border-radius: 16px; box-shadow: 0 4px 20px rgba(0,0,0,0.06); }
-    h1 { color: #05284c; margin-top: 0; }
-    h1 span { color: #0095f6; }
-    h2 { color: #0066cc; border-bottom: 1px solid #e3eef8; padding-bottom: 6px; margin-top: 28px; }
-    .meta { color: #5a6b7c; font-size: 14px; }
-    hr { border: 0; border-top: 2px dashed #d8e6f3; margin: 36px 0; }
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TrukLink — Сброс пароля</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background: linear-gradient(180deg, #D3E9FF 0%, #F2F8FF 50%, #D6EBFF 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+            color: #042240;
+        }
+        .card {
+            background: #ffffff;
+            border-radius: 24px;
+            padding: 32px 24px;
+            max-width: 400px;
+            width: 100%;
+            text-align: center;
+            box-shadow: 0 10px 30px rgba(4, 34, 64, 0.1);
+        }
+        .logo {
+            font-size: 32px;
+            font-weight: 800;
+            margin-bottom: 12px;
+        }
+        .logo span {
+            color: #0095F6;
+        }
+        p {
+            font-size: 15px;
+            line-height: 1.5;
+            color: #4A607A;
+            margin: 0 0 24px;
+        }
+        .btn {
+            display: inline-block;
+            width: 100%;
+            box-sizing: border-box;
+            padding: 15px 24px;
+            background: linear-gradient(90deg, #004C99, #0077D6);
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 999px;
+            box-shadow: 0 6px 16px rgba(0, 119, 214, 0.3);
+        }
+    </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Truk<span>Link</span></h1>
-    <p class="meta">Версия: 0.1.0 • Разработчик: TrukLink Team • Контакт: taurus8127@gmail.com</p>
-    <p><strong>TrukLink</strong> — мобильное приложение и живая карта для водителей-дальнобойщиков. Помогает находить коллег рядом, общаться в чатах и обмениваться голосовыми сообщениями в пути.</p>
+    <div class="card">
+        <div class="logo">Truk<span>Link</span></div>
+        <p>Нажмите кнопку ниже, чтобы открыть приложение TrukLink и задать новый пароль.</p>
+        <a id="openAppBtn" class="btn" href="truklink://reset-password">Открыть TrukLink</a>
+    </div>
 
-    <h2>Политика конфиденциальности (Privacy Policy)</h2>
-    <p>Настоящая Политика конфиденциальности описывает, как приложение <strong>TrukLink</strong> (разработчик: <strong>TrukLink Team</strong>) собирает, использует и защищает информацию пользователей.</p>
-    <ul>
-      <li><strong>Данные аккаунта:</strong> При регистрации или входе через Google мы получаем ваше имя, адрес электронной почты (или номер телефона) и фото профиля для создания анкеты водителя.</li>
-      <li><strong>Геолокация:</strong> Приложение использует данные о местоположении (в том числе в фоновом режиме с вашего явного разрешения) исключительно для отображения вашей позиции на карте коллегам в выбранном радиусе поиска.</li>
-      <li><strong>Сообщения и аудио:</strong> Текстовые и голосовые сообщения передаются по защищённому соединению и доступны только участникам диалога.</li>
-      <li><strong>Передача третьим лицам:</strong> Мы не продаём и не передаём ваши персональные данные рекламным сетям или третьим лицам.</li>
-      <li><strong>Удаление данных:</strong> Вы можете в любой момент изменить данные профиля или запросить полное удаление аккаунта, написав нам на <strong>taurus8127@gmail.com</strong>.</li>
-    </ul>
-
-    <hr />
-
-    <h2>Privacy Policy (English)</h2>
-    <p>This Privacy Policy explains how <strong>TrukLink</strong> (developed by <strong>TrukLink Team</strong>) collects, uses, and protects user information.</p>
-    <ul>
-      <li><strong>Account Information:</strong> When signing in via Google or phone number, we collect your display name, email address / phone number, and profile picture to set up your driver profile.</li>
-      <li><strong>Location Data:</strong> TrukLink collects location data (including in the background when explicitly permitted by you) solely to show your position on the map to nearby drivers within your chosen search radius.</li>
-      <li><strong>Messages & Voice Notes:</strong> Text and voice messages are transmitted securely and are accessible only to chat participants.</li>
-      <li><strong>Data Sharing:</strong> We do not sell or share your personal data with third parties or ad networks.</li>
-      <li><strong>Data Deletion:</strong> You may update your profile details at any time or request full account deletion by contacting <strong>taurus8127@gmail.com</strong>.</li>
-    </ul>
-  </div>
+    <script>
+        (function () {
+            var deepLink = "truklink://reset-password" + window.location.search + window.location.hash;
+            var btn = document.getElementById("openAppBtn");
+            if (btn) {
+                btn.href = deepLink;
+            }
+            window.location.replace(deepLink);
+        })();
+    </script>
 </body>
 </html>
