@@ -62,13 +62,19 @@
         <a id="openAppBtn" class="btn" href="truklink://reset-password">Открыть TrukLink</a>
     </div>
 
-    <script>
+        <script>
         (function () {
             var deepLink = "truklink://reset-password" + window.location.search + window.location.hash;
             var btn = document.getElementById("openAppBtn");
             if (btn) {
                 btn.href = deepLink;
             }
+            setTimeout(function () {
+                window.location.href = deepLink;
+            }, 150);
+        })();
+    </script>
+
             window.location.replace(deepLink);
         })();
     </script>
